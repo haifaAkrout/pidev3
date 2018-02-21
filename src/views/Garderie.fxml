@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.lynden.gmapsfx.GoogleMapView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import org.controlsfx.control.Rating?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="890.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.GarderieController">
+   <children>
+      <ImageView fx:id="imgView2" fitHeight="197.0" fitWidth="216.0" layoutX="541.0" layoutY="91.0" pickOnBounds="true" preserveRatio="true" />
+      <TextField fx:id="inputName2" disable="true" layoutX="305.0" layoutY="113.0" />
+      <TextField fx:id="Adresse2" disable="true" layoutX="313.0" layoutY="157.0" />
+      <TextField fx:id="propriétaire2" disable="true" layoutX="313.0" layoutY="201.0" />
+      <TextField fx:id="email2" disable="true" layoutX="313.0" layoutY="250.0" />
+      <Label layoutX="246.0" layoutY="117.0" text="Nom" />
+      <Label layoutX="252.0" layoutY="161.0" text="Adresse" />
+      <Label layoutX="228.0" layoutY="205.0" text="propriétaire" />
+      <Label layoutX="259.0" layoutY="254.0" text="Email" />
+      <TextField fx:id="Telephone2" disable="true" layoutX="313.0" layoutY="288.0" />
+      <Label layoutX="238.0" layoutY="292.0" text="Telephone" />
+      <Rating fx:id="rating" layoutX="574.0" layoutY="356.0" />
+      <GoogleMapView fx:id="mapView2" layoutY="420.0" prefHeight="226.0" prefWidth="890.0" />
+      <JFXButton fx:id="inscription" layoutX="342.0" layoutY="348.0" onAction="#Inscrire" text="Inscription" />
+      <TextField fx:id="from" layoutX="297.0" layoutY="39.0" onAction="#cherchertrajectoire" style="-fx-background-color: #FFFFFF;" />
+      <JFXButton fx:id="inscrit" layoutX="108.0" layoutY="360.0" onAction="#inscrit2" text="déja Inscrit" />
+   </children>
+</AnchorPane>

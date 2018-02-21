@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPane" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #FFFFFF;" stylesheets="@main.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AjoutMedecinController">
+   <children>
+      <Label layoutX="313.0" layoutY="42.0" text="Ajout d'un médecin" textFill="#c92727">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nom" layoutX="400.0" layoutY="95.0" />
+      <Label layoutX="313.0" layoutY="99.0" text="Nom" />
+      <TextField fx:id="prenom" layoutX="400.0" layoutY="142.0" />
+      <Label layoutX="306.0" layoutY="146.0" text="Prenom" />
+      <ChoiceBox fx:id="specialite" layoutX="400.0" layoutY="193.0" prefWidth="150.0" />
+      <Label layoutX="302.0" layoutY="197.0" text="Spécialité" />
+      <TextField fx:id="adresse" layoutX="400.0" layoutY="239.0" />
+      <Label layoutX="307.0" layoutY="243.0" text="Adresse" />
+      <TextField fx:id="telephone" layoutX="401.0" layoutY="287.0" />
+      <Label layoutX="312.0" layoutY="291.0" text="Telephone" />
+      <Button fx:id="img" layoutX="447.0" layoutY="487.0" mnemonicParsing="false" onAction="#showImg" text="browse" />
+      <ImageView fx:id="ImageView1" fitHeight="101.0" fitWidth="166.0" layoutX="400.0" layoutY="373.0" pickOnBounds="true" preserveRatio="true" />
+      <Button layoutX="414.0" layoutY="567.0" mnemonicParsing="false" onAction="#newPersonButtonPushed" text="Ajouter un médecin" />
+      <TextField fx:id="email" layoutX="401.0" layoutY="333.0" />
+      <Label layoutX="326.0" layoutY="337.0" text="Email" />
+      <VBox layoutX="20.0" layoutY="20.0" prefHeight="0.0" prefWidth="0.0" stylesheets="@../../../../../Desktop/travail/Library-Assistant-master/src/resources/dark-theme.css" />
+      <VBox fx:id="vbox" layoutY="-3.0" prefHeight="641.0" prefWidth="197.0" stylesheets="@main.css">
+         <children>
+            <JFXButton fx:id="liste" onAction="#loadAddBook" prefHeight="30.0" prefWidth="198.0" text="Mon Compte" textAlignment="CENTER" textFill="#c92727">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="200.0" />
+               </VBox.margin>
+            </JFXButton>
+            <JFXButton fx:id="liste1" prefHeight="30.0" prefWidth="198.0" text="Annuaires" textAlignment="CENTER" textFill="#c92727">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </JFXButton>
+            <JFXButton fx:id="liste11" prefHeight="30.0" prefWidth="198.0" text="Bon Plan" textAlignment="CENTER" textFill="#c92727">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </JFXButton>
+            <JFXButton fx:id="liste12" prefHeight="30.0" prefWidth="198.0" text="Aides &amp; Services" textAlignment="CENTER" textFill="#c92727">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </JFXButton>
+            <JFXButton fx:id="liste13" prefHeight="30.0" prefWidth="198.0" text="Garderies" textAlignment="CENTER" textFill="#c92727">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </JFXButton>
+            <JFXButton fx:id="liste14" prefHeight="30.0" prefWidth="198.0" text="Réclamations" textAlignment="CENTER" textFill="#c92727">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </JFXButton>
+            <JFXButton fx:id="liste16" prefHeight="30.0" prefWidth="198.0" text="Bonnes affaires" textAlignment="CENTER" textFill="#c92727">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </JFXButton>
+            <JFXButton fx:id="liste17" prefHeight="30.0" prefWidth="198.0" text="Forum" textAlignment="CENTER" textFill="#c92727">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </JFXButton>
+            <JFXButton fx:id="liste18" prefHeight="30.0" prefWidth="198.0" text="Evènements" textAlignment="CENTER" textFill="#c92727">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

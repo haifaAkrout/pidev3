@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.BienvenueController">
+   <children>
+      <Label fx:id="lb1" layoutX="166.0" layoutY="13.0" prefHeight="53.0" prefWidth="387.0" text="Votre Inscription est confirmé" textAlignment="CENTER" textFill="#c31313">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lb2" layoutX="212.0" layoutY="80.0" prefHeight="20.0" prefWidth="211.0" text="soyez le bienvenue" textFill="#42c6db">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lb3" layoutX="18.0" layoutY="107.0" prefHeight="251.0" prefWidth="792.0" />
+      <TextField fx:id="dateamodifier" layoutX="292.0" layoutY="236.0" onAction="#modifier" visible="false" />
+   </children>
+</AnchorPane>

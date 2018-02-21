@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.141" fx:controller="controllers.AfficherController">
+   <children>
+      <TableView fx:id="TableEnfant" layoutX="338.0" layoutY="63.0" prefHeight="200.0" prefWidth="225.0">
+         <columns>
+            <TableColumn fx:id="Pseudonyme" prefWidth="75.0" text="Pseudonyme" />
+            <TableColumn fx:id="Age" onEditCommit="#changerAge" prefWidth="75.0" text="Age" />
+            <TableColumn fx:id="Sexe" onEditCommit="#changerSexe" prefWidth="75.0" text="Sexe" />
+         </columns>
+      </TableView>
+      <Button fx:id="Ajouter" layoutX="117.0" layoutY="341.0" mnemonicParsing="false" onAction="#AjouterEnfant" text="Ajouter" />
+      <Button fx:id="Retour" layoutX="505.0" layoutY="341.0" mnemonicParsing="false" onAction="#Retour" text="Annuler" />
+      <Button fx:id="Supprimer" layoutX="415.0" layoutY="341.0" mnemonicParsing="false" onAction="#Supprimer" onMouseClicked="#deleteEnfant" text="Supprimer" />
+      <TextField fx:id="Pseudo" layoutX="70.0" layoutY="63.0" promptText="Pseudonyme" />
+      <TextField fx:id="Ag" layoutX="71.0" layoutY="151.0" promptText="Age" />
+      <ComboBox fx:id="Sex" layoutX="70.0" layoutY="238.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>

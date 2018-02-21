@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="800.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ListesDocteursController">
+   <children>
+      <Label layoutX="256.0" layoutY="64.0" prefHeight="17.0" prefWidth="319.0" text="LISTES DES DOCTEURS" textFill="#ff1818">
+         <font>
+            <Font name="System Bold Italic" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="65.0" layoutY="141.0" text="Trouver un docteur" textFill="#3580c6">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <HBox layoutX="45.0" layoutY="168.0" prefHeight="100.0" prefWidth="635.0">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Label text="Spécialité">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font></Label>
+                  <ChoiceBox fx:id="specialité" prefWidth="150.0">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </ChoiceBox>
+               </children>
+               <HBox.margin>
+                  <Insets right="20.0" top="20.0" />
+               </HBox.margin>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Label text="Régions" textFill="#2f2b2b">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Label>
+                  <ChoiceBox fx:id="régions" prefWidth="150.0">
+                     <opaqueInsets>
+                        <Insets right="20.0" />
+                     </opaqueInsets>
+                  </ChoiceBox>
+               </children>
+               <HBox.margin>
+                  <Insets right="20.0" top="20.0" />
+               </HBox.margin>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Label text=" Autres critères">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="nom" prefHeight="24.0" prefWidth="164.0" promptText="Nom">
+                     <VBox.margin>
+                        <Insets right="20.0" />
+                     </VBox.margin>
+                  </TextField>
+               </children>
+               <HBox.margin>
+                  <Insets top="20.0" />
+               </HBox.margin>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <HBox.margin>
+                  <Insets top="35.0" />
+               </HBox.margin>
+               <children>
+                  <Button fx:id="find" mnemonicParsing="false" onAction="#trouver" text="rechercher" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <TableView fx:id="tableUser" layoutX="71.0" layoutY="281.0" onMouseClicked="#clickItem" prefHeight="341.0" prefWidth="637.0" visible="false">
+         <columns>
+            <TableColumn fx:id="ColumnId" prefWidth="75.0" text="id" />
+            <TableColumn fx:id="ColumnName" prefWidth="88.0" text="nom" />
+            <TableColumn fx:id="ColumnPrenom" prefWidth="101.0" text="Prenom" />
+            <TableColumn fx:id="ColumnTelephone" prefWidth="92.0" text="Telephone" />
+            <TableColumn fx:id="ColumnSpecialite" prefWidth="105.0" text="Specialite" />
+            <TableColumn fx:id="ColumnEmail" minWidth="5.0" prefWidth="100.0" text="Email" />
+            <TableColumn fx:id="ColumnAdresse" prefWidth="75.0" text="Adresse" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>
